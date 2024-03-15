@@ -134,7 +134,7 @@ def add_contact(args, contacts):
     contacts.add_record(record)
     return "Contact added."
 
-@input_error
+@input_error #зстосування декоратора для перевірки правильності введення даних
 def change_username_phone(args, contacts):
     name, phone_new = args
     record = contacts.find(name)
